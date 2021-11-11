@@ -15,20 +15,39 @@ section {
   height: 200vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px auto 300px;
+  grid-template-rows: 300px 300px 300px auto 300px;
   grid-gap: 5px;
   grid-template-areas:
-    'foo bar bar'
-    'content content yum'
+    'foo foo foo'
+    'bar bar bar'
+    'yum yum yum'
+    'content content content'
     'goodies yummy yummy';
 }
 .inner1 {
   grid-area: foo;
-  background-color: #ffffff;
+  background-color: #000000;
+  position: relative;
 }
-.inner1 img {
+.inner1 iframe {
+}
+.img1 {
   width: auto;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  pointer-events: none;
+}
+.img2 {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
+  pointer-events: none;
 }
 .inner2 {
   grid-area: bar;
