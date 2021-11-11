@@ -25,7 +25,7 @@ section {
     'goodies yummy yummy';
 }
 .inner1 {
-  grid-area: foo;
+  grid-area: bar;
   background-color: #000000;
   position: relative;
 }
@@ -50,7 +50,7 @@ section {
   pointer-events: none;
 }
 .inner2 {
-  grid-area: bar;
+  grid-area: foo;
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr;
