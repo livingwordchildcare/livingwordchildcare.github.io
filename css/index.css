@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 html,
 body {
   margin: 0;
   background-color: #fbae3c;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 section {
   display: flex;
@@ -11,6 +11,8 @@ section {
   align-items: center;
 }
 .main-section {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #fbae3c;
   height: 200vh;
   display: grid;
@@ -18,11 +20,11 @@ section {
   grid-template-rows: 300px 300px 300px auto 300px;
   grid-gap: 5px;
   grid-template-areas:
-    'foo foo foo'
-    'bar bar bar'
-    'yum yum yum'
-    'content content content'
-    'goodies yummy yummy';
+    "foo foo foo"
+    "bar bar bar"
+    "yum yum yum"
+    "content content content"
+    "goodies yummy yummy";
 }
 .inner1 {
   grid-area: bar;
@@ -57,9 +59,9 @@ section {
   grid-template-rows: 100px 1fr 100px;
   grid-gap: 5px;
   grid-template-areas:
-    'slogan'
-    'menu'
-    'menu-items';
+    "slogan"
+    "menu"
+    "menu-items";
 }
 .slogan {
   grid-area: slogan;
@@ -140,10 +142,8 @@ section {
   justify-content: flex-start;
 }
 .hiring-section {
-  height: 300px;
+  height: auto;
   width: 100%;
-  padding-left: 10px;
-  margin-right: 10px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -185,8 +185,46 @@ section {
 .center {
   align-items: center;
 }
+#hiring > div {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+#hiring > div img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+#hiring > div p {
+  margin: 0;
+  padding: 0 5px 0 5px;
+  display: flex;
+  flex-direction: column;
+  color: #20a9df;
+}
+#hiring > div span {
+  margin-bottom: 10px;
+}
 /* Tablet View */
 @media only screen and (max-width: 800px) {
+  #hiring > div img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  #hiring > div p {
+    margin-top: 0;
+    padding: 10px 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    color: #20a9df;
+  }
+  #hiring > div span {
+    margin-bottom: 10px;
+  }
+  #hiring > div {
+    flex-direction: column;
+  }
   .main-section {
     background-color: #fbae3c;
     height: 200vh;
@@ -195,10 +233,10 @@ section {
     grid-template-rows: 250px 200px 1fr 250px;
     grid-gap: 5px;
     grid-template-areas:
-      'foo foo'
-      'bar yum'
-      'content content'
-      'goodies yummy';
+      "foo foo"
+      "bar yum"
+      "content content"
+      "goodies yummy";
   }
   .inner2 {
     display: grid;
@@ -206,9 +244,9 @@ section {
     grid-template-rows: 50px 1fr 50px;
     grid-gap: 5px;
     grid-template-areas:
-      'slogan'
-      'menu'
-      'menu-items';
+      "slogan"
+      "menu"
+      "menu-items";
   }
   .slogan {
     text-align: center;
@@ -266,10 +304,8 @@ section {
     justify-content: flex-start;
   }
   .hiring-section {
-    height: 300px;
+    height: auto;
     width: 100%;
-    padding-left: 10px;
-    margin-right: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -304,12 +340,12 @@ section {
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px 300px auto 200px 300px;
     grid-template-areas:
-      'foo'
-      'bar'
-      'yum'
-      'content'
-      'goodies'
-      'yummy';
+      "foo"
+      "bar"
+      "yum"
+      "content"
+      "goodies"
+      "yummy";
   }
   .inner4 {
     grid-area: yum;
@@ -338,10 +374,8 @@ section {
     width: 100%;
   }
   .hiring-section {
-    height: 300px;
+    height: auto;
     width: 100%;
-    padding-left: 10px;
-    margin-right: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
